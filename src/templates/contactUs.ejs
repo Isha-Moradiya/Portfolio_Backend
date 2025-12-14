@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact Form Submission</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px 30px;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #740ebe;
+            border-bottom: 2px solid #740ebe;
+            padding-bottom: 8px;
+        }
+
+        p {
+            margin: 8px 0;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .message {
+            background: #f3e8ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>📬 New Contact Form Submission</h2>
+        <p><span class="label">Name:</span>
+            <%= firstName %>
+                <%= lastName %>
+        </p>
+        <p><span class="label">Email:</span>
+            <%= email %>
+        </p>
+        <p><span class="label">Contact Number:</span>
+            <%= contactNumber %>
+        </p>
+        <div class="message">
+            <span class="label">Message:</span><br />
+            <%= message %>
+        </div>
+    </div>
+</body>
+
+</html>
